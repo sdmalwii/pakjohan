@@ -1,0 +1,8 @@
+numbers = [3, 5, 1, 9, 2]
+#min_number = min(numbers)
+#print(min_number) # Output: 
+#numbers = [3, 5, 1, 9, 2]
+#min_number = min(numbers)
+#print(min_number) # Output: 1
+average = sum(numbers) / len(numbers)
+print(average) # Output: 4.0
