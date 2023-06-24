@@ -4,13 +4,13 @@ import nltk
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import pandas as pd
+nltk.download('punkt')
+
 
 #Load your data into a pandas DataFrame:
 #data = pd.read_csv("C:\Users\fujitsu\Documents\STMIK Jayakarta\sem 3\bigdata\tugasopenapi\rawdata.csv")  
 data = pd.read_csv('rawdata.csv')
-#del data['1']
 # Download the necessary resources for tokenization
-#nltk.download('punkt')
 
 #Remove any special characters, URLs, or non-alphanumeric characters using regular 
 def remove_special_characters(text):
@@ -98,4 +98,3 @@ for index, row in data.iterrows():
 
 #export to csv
 new_df.to_csv(r'clean.csv', index=False)
-

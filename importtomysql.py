@@ -8,7 +8,7 @@ def create_connection():
     try:
         connection = mysql.connector.connect(
             host='localhost',
-            database='walid',
+            database='db_openapi',
             user='root',
             password=''
         )
@@ -53,7 +53,7 @@ def insert_data_from_csv(connection, csv_file, table_name):
 connection = create_connection()
 
 # Memasukkan data dari CSV ke MySQL
-insert_data_from_csv(connection, 'rawdata.csv', 'nama_tabel')
+insert_data_from_csv(connection, 'clean.csv', 'dataapi')
 
 # Tutup koneksi
 connection.close()
