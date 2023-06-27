@@ -6,12 +6,13 @@ from nltk.tokenize import word_tokenize
 import pandas as pd
 nltk.download('punkt')
 
-
 #Load your data into a pandas DataFrame:
 #data = pd.read_csv("C:\Users\fujitsu\Documents\STMIK Jayakarta\sem 3\bigdata\tugasopenapi\rawdata.csv")  
 data = pd.read_csv('rawdata.csv')
-# Download the necessary resources for tokenization
 
+# Download the necessary resources for tokenization
+#nltk.download('punkt')
+    
 #Remove any special characters, URLs, or non-alphanumeric characters using regular 
 def remove_special_characters(text):
     pattern = r'[^a-zA-Z0-9\s]'
